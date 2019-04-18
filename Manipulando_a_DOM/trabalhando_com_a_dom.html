@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso Javascript</title>
+    </head>
+    <body>
+        <div id="app">
+            <input tyoe="text" name="nome" id="nome" class="nome"/>
+            <button class="botao">Adicionar</button>
+        </div>
+
+        <script>
+
+            // Algumas formas de manipular elementos da DOM
+            var inputElement = document.getElementById('nome');
+            var inputElement2 = document.getElementsByTagName('input');
+            var inputElement3 = document.getElementsByClassName('nome');
+            var inputElement4 = document.querySelector('input[class=nome]');
+
+            // Pegando o campo de texto e o botão da DOM
+            var inputElement5 = document.querySelector('input[name=nome');
+            var btnElement = document.querySelector('button.botao');
+
+            // armazenando o texto digitado no campo de texto e ativando o alerta com o texto digitado
+            btnElement.onclick = function(){
+                var text = inputElement5.value;
+                alert(text);
+            }
+
+            console.log(inputElement4);
+        </script>
+    </body>
+</html>
